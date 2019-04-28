@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TestNG-Suite">
+  <test name="TestNG-Test">
+    <parameter name="baseURL" value="http://demo.guru99.com/V4/"/>
+    <parameter name="username" value="mngr190802"/>
+    <parameter name="password" value="susUnYd"/>
+    <groups>
+        <define name="RunSelected">
+            <include name="login"/>
+            <include name="data"/>
+        </define>
+        <run>
+            <include name="RunSelected"/>
+        </run>
+    </groups>
+    
+    <classes>
+      <class name="com.testng.automation.LoginApp"/>
+      <class name="com.testng.automation.DataProvidersTestNG"/>
+    </classes>
+  </test>
+</suite>
