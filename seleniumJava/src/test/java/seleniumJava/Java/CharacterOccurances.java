@@ -42,7 +42,5 @@ public class CharacterOccurances {
 					System.out.println(ch[i]+" is: "+counter+" times");
 			}
 		}
-		//***************************************************************************
-		
 	}
 }
